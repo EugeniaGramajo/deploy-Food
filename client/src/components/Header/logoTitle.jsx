@@ -7,7 +7,7 @@ export default function LogoTitle(props){
 
     return(
         <>
-        <img className={styles.div} src="images/mainLogo1.png" alt="mainLogo" />
+        <img className={styles.div} src="/images/mainLogo1.png" alt="mainLogo" />
         <br/>
         </>
     )
