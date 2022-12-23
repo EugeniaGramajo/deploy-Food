@@ -14,6 +14,7 @@ export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
 
 
 export const getAllRecipes = (param) => {
+  console.log("entre al llamado")
   return function (dispatch) {
     return axios
       .get("deploy-food-production.up.railway.app/recipes")
