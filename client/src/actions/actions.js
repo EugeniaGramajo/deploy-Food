@@ -16,7 +16,7 @@ export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
 export const getAllRecipes = (param) => {
   return function (dispatch) {
     return axios
-      .get("recipes")
+      .get("deploy-food-production.up.railway.app/recipes")
       .then((response) =>
         dispatch({ type: GET_ALL_RECIPES, payload: response.data })
       );
@@ -26,7 +26,7 @@ export const getAllRecipes = (param) => {
 export const getAllRecipesById = (id) => {
   return function (dispatch) {
     return axios
-      .get(`recipes/${id}`)
+      .get(`deploy-food-production.up.railway.app/recipes/${id}`)
       .then((res) =>
         dispatch({ type: GET_ALL_RECIPES_BY_ID, payload: res.data })
       );
@@ -35,7 +35,7 @@ export const getAllRecipesById = (id) => {
 
 export const getDietTypes = () => {
   return function (dispatch) {
-        return axios.get("diets")
+        return axios.get("deploy-food-production.up.railway.app/diets")
     .then(res=> {
       console.log(res)
       console.log(res.data)
@@ -97,7 +97,7 @@ export const updateRecipe = () => {};
 
 export const createRecipe = (payload) => {
   return async function (dispatch) {
-    var json = await axios.post("recipes", payload);
+    var json = await axios.post("deploy-food-production.up.railway.app/recipes", payload);
     return json;
   };
 };
