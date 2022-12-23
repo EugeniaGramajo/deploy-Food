@@ -4,7 +4,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const { API_KEY3 } = process.env;
-const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY3}&addRecipeInformation=true&number=5`;
+const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY3}&addRecipeInformation=true&number=25`;
 
 const getApiRecipes = () => {
   const apiRecipes = axios.get(apiURL).then((res) =>
