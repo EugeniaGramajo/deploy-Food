@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+.div{
+    margin: auto;
+    max-width: 1300px;
+}
+.divaux{
+    padding: 30px;
+}

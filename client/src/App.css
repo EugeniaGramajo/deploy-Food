@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-image: url("./images/background3.png");
+  background-size: 450px;
+  min-height: 975px;
+  height: max-content;
+  font-family: Century Gothic;
+  color: #50342b;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

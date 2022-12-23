@@ -1,0 +1,33 @@
+.img{
+    margin: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.555);
+    width: 60%;
+    height: 80%;
+}
+.div{
+    padding: 40px;
+    width: 30%;
+    margin: auto;
+    font-weight: 600;
+    color: #50342b;
+
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.364);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+border: 1px solid rgba(255, 255, 255, 0.53);
+}
+.button{
+    border-radius: 5px;
+    color:#fff;
+    background-color: #ebb7be;
+    border: none;
+}
+.button:hover{
+    border-radius: 5px;
+    transition: 0.35s;
+    background-color: #efd3d7;
+    
+}

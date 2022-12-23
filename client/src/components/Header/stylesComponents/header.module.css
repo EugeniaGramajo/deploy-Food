@@ -1,0 +1,26 @@
+
+.div{
+    background-color: #ffeeed;
+    color:#17C3B2;
+    display: flex;
+    justify-content:flex-start;
+
+    height: 181px;
+}
+
+.logo{
+    
+    height: 180px;
+    margin: 20px;
+    margin-left: 90PX;
+    margin-top: 0PX;
+   
+
+}
+
+.searchBar{
+    margin-left: 50%;
+ align-self: center;
+ 
+}
+
