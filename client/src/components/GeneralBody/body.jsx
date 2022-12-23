@@ -43,7 +43,7 @@ export default function Body(props) {
     <Filters></Filters>
     <Paginado total={total} paged={paged} pagedN={pagedN} pagedP={pagedP}></Paginado>
 <div className={styles.container}>
-        { showRecipes.map((recipe) => (
+        { showRecipes?.map((recipe) => (
           <RecipeCard
             title={recipe.title}
             image={recipe.image}
