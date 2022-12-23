@@ -7,7 +7,7 @@ import Form from './components/Form/form';
 import Landing from './components/Landing/Landing';
 import About from './components/About/about';
 import axios from "axios"
-axios.defaults.baseURL = "http://localhost:3001/"
+axios.defaults.baseURL = "deploy-food-production.up.railway.app/"
 
 function App() {
 
