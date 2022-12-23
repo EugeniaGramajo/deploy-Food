@@ -35,20 +35,20 @@ export const getAllRecipesById = (id) => {
 
 export const getDietTypes = () => {
   return function (dispatch) {
-    /*     return axios.get("diets")
+        return axios.get("diets")
     .then(res=> {
       console.log(res)
       console.log(res.data)
       dispatch({ type: GET_DIETS, payload: res.data })
       
     })
-    .catch(err=>console.log(err)) */
-    return fetch("diets")
+    .catch(err=>console.log(err))
+    /* return fetch("diets")
       .then((response) => response.json())
       .then((data) => {
         dispatch({ type: GET_DIETS, payload: data });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); */
   };
 };
 
