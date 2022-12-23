@@ -42,7 +42,7 @@ export const getDietTypes = () => {
       dispatch({ type: GET_DIETS, payload: res.data })
       
     })
-    .catch(err=>console.log(err))
+    .catch(err=>err)
     /* return fetch("diets")
       .then((response) => response.json())
       .then((data) => {
