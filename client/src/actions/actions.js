@@ -19,8 +19,8 @@ export const getAllRecipes = (param) => {
     return axios
       .get("deploy-food-production.up.railway.app/recipes")
       .then((response) =>
-      console.log(response.data),
-        dispatch({ type: GET_ALL_RECIPES, payload: response.data })
+      
+        dispatch(console.log(response.data),{ type: GET_ALL_RECIPES, payload: response.data })
       );
   };
 };
