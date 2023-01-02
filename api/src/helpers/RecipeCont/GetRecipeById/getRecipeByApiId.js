@@ -6,7 +6,7 @@ const { API_KEY3 } = process.env;
 const getRecipeByApiId = async (id) => {
     try {
       const recipe = await axios.get(
-        `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY3}`
+        `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5/${id}`
       );
       const foundId = recipe.data;
       return {
