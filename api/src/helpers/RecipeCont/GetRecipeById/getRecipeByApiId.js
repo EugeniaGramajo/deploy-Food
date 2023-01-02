@@ -1,10 +1,9 @@
 const axios = require("axios");
+const getAllRecipes = require("../GetRecipes/GetAllRecipes");
 
 const getRecipeByApiId = async (id) => {
     try {
-      const recipe = await axios.get(
-        `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5/`
-      );
+      const recipe = await getAllRecipes()
 
       let foundId = recipe.data.results.filter(e =>{ 
         console.log(e)
