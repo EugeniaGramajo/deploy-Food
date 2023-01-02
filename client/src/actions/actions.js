@@ -63,7 +63,7 @@ export const getRecipesByDiet = (condition) => {
 
 export const cleanState = () => {
   return {
-    type: CLEAN_STATE,
+    type: "CLEAN_STATE",
   };
 };
 
@@ -73,7 +73,7 @@ export const getRecipeByName = (payload) => {
     try {
       
       var json = await axios.get(
-        "recipes?title=" + payload
+        "https://deploy-food-production.up.railway.app/recipes?title=" + payload
       );
       return dispatch({
         type: "GET_TITLE_RECIPES",
