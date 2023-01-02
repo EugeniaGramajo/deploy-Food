@@ -35,7 +35,7 @@ const getRecipeByApiId = async (id) => {
         image: foundId.image,
       };
     } catch (e) {
-      return undefined;
+      return e;
     }
   };
   module.exports=getRecipeByApiId;

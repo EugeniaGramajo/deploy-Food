@@ -3,7 +3,7 @@ const axios = require("axios")
 require("dotenv").config();
 
 const {API_KEY3} = process.env;
-const apiURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY3}&addRecipeInformation=true&number=5`;
+const apiURL = `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`;
 
 
 const APIFiltered = async (filter) =>{
