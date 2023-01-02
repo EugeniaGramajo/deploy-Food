@@ -30,7 +30,7 @@ export const getAllRecipesById = (id) => {
     return axios
       .get(`https://deploy-food-production.up.railway.app/recipes/${id}`)
       .then((res) =>
-        dispatch({ type: GET_ALL_RECIPES_BY_ID, payload: res.data })
+        dispatch({ type: "GET_ALL_RECIPES_BY_ID", payload: res.data })
       );
   };
 };
@@ -41,7 +41,7 @@ export const getDietTypes = () => {
     .then(res=> {
       console.log(res)
       console.log(res.data)
-      dispatch({ type: GET_DIETS, payload: res.data })
+      dispatch({ type: "GET_DIETS", payload: res.data })
       
     })
     .catch(err=>console.log(err))
@@ -56,7 +56,7 @@ export const getDietTypes = () => {
 
 export const getRecipesByDiet = (condition) => {
   return {
-    type: GET_RECIPES_BY_DIET,
+    type: "GET_RECIPES_BY_DIET",
     payload: condition,
   };
 };
@@ -76,7 +76,7 @@ export const getRecipeByName = (payload) => {
         "recipes?title=" + payload
       );
       return dispatch({
-        type: GET_TITLE_RECIPES,
+        type: "GET_TITLE_RECIPES",
         payload: json.data,
       });
     } catch (error) {
@@ -87,7 +87,7 @@ export const getRecipeByName = (payload) => {
 
 export const getRecipesSort = (sort) => {
   return{
-    type: GET_RECIPES_SORT, payload: sort
+    type: "GET_RECIPES_SORT", payload: sort
   }
 };
 
