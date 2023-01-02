@@ -9,7 +9,7 @@ const { API_KEY3 } = process.env;
 
 const getDietPreLoad= async()=>{
     try {
-        const apiInfo = await axios.get(`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5/716426`)
+        const apiInfo = await axios.get(`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`)
         const apiDiets = apiInfo.data?.results.map(element => element.diets)
         const repeatedDiets = apiDiets.flat()
         const finalListOfDiets = [...new Set(repeatedDiets)]
