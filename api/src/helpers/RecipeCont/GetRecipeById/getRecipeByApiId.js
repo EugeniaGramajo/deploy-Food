@@ -5,7 +5,7 @@ const getRecipeByApiId = async (id) => {
       const recipe = await axios.get(
         `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5/${id}`
       );
-      const foundId = recipe.data;
+      const foundId = recipe.data.results;
       console.log(foundId)
       return {
         id: foundId.id,
