@@ -19,7 +19,7 @@ export const getAllRecipes = () => {
     try {
       const response = await axios
       .get("deploy-food-production.up.railway.app/recipes");
-     dispatch(console.log(response), { type: GET_ALL_RECIPES, payload: response });
+     dispatch(console.log(response.data), { type: GET_ALL_RECIPES, payload: response.data });
     } catch (error) {
       console.log(error)
     }
