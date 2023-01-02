@@ -10,11 +10,11 @@ export const GET_RECIPES_SORT = "GET_RECIPES_SORT";
 export const GET_RECIPES_BY_DIET = "GET";
 export const CLEAN_STATE = "CLEAN_STATE";
 export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
-
+let URL = "deploy-food-production.up.railway.app/"
 
 
 export const getAllRecipes = () => dispatch => {
- return fetch ("deploy-food-production.up.railway.app/recipes")
+ return fetch (URL + "recipes")
  .then(res=> res.json())
  .then(data=> {return dispatch({type:GET_ALL_RECIPES, payload:data})})
  .catch(error =>{
