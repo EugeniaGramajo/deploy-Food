@@ -22,7 +22,7 @@ export const getAllRecipes = (param) => {
       }})
       .then((response) =>
       
-        dispatch(console.log(response.data),{ type: GET_ALL_RECIPES, payload: response.data })
+        dispatch({ type: "GET_ALL_RECIPES", payload: response.data })
       );
   };
 };
