@@ -15,9 +15,6 @@ export default function RecipeDetail(props) {
     dispatch(getAllRecipesById(recipeId.id));
   }, [dispatch]);
   const clickHandler=(e)=>{
-    recipeDetails={}
-    cleanState()
-    recipeDetail={}
   return cleanState()}
 
   const filteredIngredients = recipeDetail.ingredients
