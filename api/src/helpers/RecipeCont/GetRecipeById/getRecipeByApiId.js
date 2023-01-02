@@ -1,7 +1,4 @@
 const axios = require("axios");
-require("dotenv").config();
-const { API_KEY3 } = process.env;
-
 
 const getRecipeByApiId = async (id) => {
     try {
