@@ -13,38 +13,33 @@ export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
 
 
 
-export const getAllRecipes = (param) => {
+export const getAllRecipes = () => {
   console.log("entre al llamado")
-  return function (dispatch) {
-    return axios
-      .get("deploy-food-production.up.railway.app/recipes")
-      .then((response) =>
-      
-        dispatch(console.log(response.data),{ type: GET_ALL_RECIPES, payload: response.data })
-      );
+  return async function (dispatch) {
+    const response = await axios
+      .get("deploy-food-production.up.railway.app/recipes");
+    return dispatch(console.log(response.data), { type: GET_ALL_RECIPES, payload: response.data });
   };
 };
 
 export const getAllRecipesById = (id) => {
-  return function (dispatch) {
-    return axios
-      .get(`deploy-food-production.up.railway.app/recipes/${id}`)
-      .then((res) =>
-        dispatch({ type: GET_ALL_RECIPES_BY_ID, payload: res.data })
-      );
+  return async function (dispatch) {
+    const res = await axios
+      .get(`deploy-food-production.up.railway.app/recipes/${id}`);
+    return dispatch({ type: GET_ALL_RECIPES_BY_ID, payload: res.data });
   };
 };
 
 export const getDietTypes = () => {
-  return function (dispatch) {
-        return axios.get("deploy-food-production.up.railway.app/diets")
-    .then(res=> {
-      console.log(res)
-      console.log(res.data)
-      dispatch({ type: GET_DIETS, payload: res.data })
-      
-    })
-    .catch(err=>console.log(err))
+  return async function (dispatch) {
+        try {
+      const res = await axios.get("deploy-food-production.up.railway.app/diets");
+      console.log(res);
+      console.log(res.data);
+      dispatch({ type: GET_DIETS, payload: res.data });
+    } catch (err) {
+      return console.log(err);
+    }
     /* return fetch("http://localhost:3001/diets")
       .then((response) => response.json())
       .then((data) => {
