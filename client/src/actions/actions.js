@@ -13,7 +13,7 @@ export const GET_TITLE_RECIPES = "GET_TITLE_RECIPES";
 let URL = "deploy-food-production.up.railway.app/";
 
 export const getAllRecipes = () => (dispatch) => {
-  return fetch("deploy-food-production.up.railway.app/recipes")
+  return fetch("https://deploy-food-production.up.railway.app/recipes")
     .then((res) => res.json())
     .then((data) => {
       return dispatch({ type: GET_ALL_RECIPES, payload: data });
