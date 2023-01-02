@@ -14,12 +14,13 @@ let URL = "deploy-food-production.up.railway.app/"
 
 
 export const getAllRecipes = () => dispatch => {
- return fetch (URL + "recipes")
+  if (URL+"recipes" === "deploy-food-production.up.railway.app/recipes" ){return fetch (URL + "recipes")
  .then(res=> res.json())
  .then(data=> {return dispatch({type:GET_ALL_RECIPES, payload:data})})
  .catch(error =>{
   console.log(error)
- })
+ })}
+ 
 };
 
 export const getAllRecipesById = (id) => {
