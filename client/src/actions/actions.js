@@ -68,22 +68,19 @@ export const cleanState = () => {
 };
 
 export const getRecipeByName = (payload) => {
- 
   return async function (dispatch) {
     try {
-      
-      var json = await axios.get(
+      const response = await axios.get(
         "https://deploy-food-production.up.railway.app/recipes?title=" + payload
       );
       return dispatch({
         type: "GET_TITLE_RECIPES",
-        payload: json.data,
+        payload: response.data,
       });
     } catch (error) {
-     return <NotFound></NotFound>
+      return <NotFound></NotFound>;}
     }
-  };
-};
+  }
 
 export const getRecipesSort = (sort) => {
   return{
