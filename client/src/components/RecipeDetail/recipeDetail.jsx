@@ -8,7 +8,9 @@ import Loading from "../Loading/Loading"
 export default function RecipeDetail(props) {
   const dispatch = useDispatch();
   const recipeId = useParams();
+  console.log(recipeId)
   let recipeDetails = useSelector((state) => state.recipeDetail);
+  console.log(recipeDetails)
   let recipeDetail = ""
    recipeDetail = recipeDetails? recipeDetails : recipeDetail.title = null
   useEffect(() => {
