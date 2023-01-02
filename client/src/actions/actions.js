@@ -13,17 +13,13 @@ export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
 
 
 
-export const getAllRecipes = () => {
-  console.log("entre al llamado")
-  return async function (dispatch) {
-    try {
-      const response = await axios
-      .get("deploy-food-production.up.railway.app/recipes");
-     dispatch(console.log(response.data), { type: GET_ALL_RECIPES, payload: response.data });
-    } catch (error) {
-      console.log(error)
-    }
-  }
+export const getAllRecipes = () => dispatch => {
+ return fetch ("deploy-food-production.up.railway.app/recipes")
+ .then(res=> res.json())
+ .then(data=> {return dispatch({type:GET_ALL_RECIPES, payload:data})})
+ .catch(error =>{
+  console.log(error)
+ })
 };
 
 export const getAllRecipesById = (id) => {
