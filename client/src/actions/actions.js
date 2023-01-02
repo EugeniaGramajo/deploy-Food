@@ -26,12 +26,10 @@ export const getAllRecipes = (param) => {
 };
 
 export const getAllRecipesById = (id) => {
-  return function (dispatch) {
-    return axios
-      .get(`https://deploy-food-production.up.railway.app/recipes/${id}`)
-      .then((res) =>
-        dispatch(console.log(res.data),{ type: "GET_ALL_RECIPES_BY_ID", payload: res.data })
-      );
+  return async function (dispatch) {
+    const res = await axios
+      .get(`https://deploy-food-production.up.railway.app/recipes/${id}`);
+    return dispatch(console.log(res.data), { type: "GET_ALL_RECIPES_BY_ID", payload: res.data });
   };
 };
 
