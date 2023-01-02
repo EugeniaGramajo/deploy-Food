@@ -16,10 +16,14 @@ export const GET_TITLE_RECIPES="GET_TITLE_RECIPES"
 export const getAllRecipes = () => {
   console.log("entre al llamado")
   return async function (dispatch) {
-    const response = await axios
+    try {
+      const response = await axios
       .get("deploy-food-production.up.railway.app/recipes");
-    return dispatch(console.log(response), { type: GET_ALL_RECIPES, payload: response });
-  };
+     dispatch(console.log(response), { type: GET_ALL_RECIPES, payload: response });
+    } catch (error) {
+      console.log(error)
+    }
+  }
 };
 
 export const getAllRecipesById = (id) => {
