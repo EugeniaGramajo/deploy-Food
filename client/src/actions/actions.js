@@ -29,7 +29,7 @@ export const getAllRecipesById = (id) => {
   return async function (dispatch) {
     const res = await axios
       .get(`https://deploy-food-production.up.railway.app/recipes/${id}`);
-    return dispatch(console.log(res.data), { type: "GET_ALL_RECIPES_BY_ID", payload: res.data });
+    return dispatch({ type: "GET_ALL_RECIPES_BY_ID", payload: res.data });
   };
 };
 
