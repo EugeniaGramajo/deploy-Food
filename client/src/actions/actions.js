@@ -17,9 +17,7 @@ export const getAllRecipes = (param) => {
   console.log("entre al llamado")
   return function (dispatch) {
     return axios
-      .get("https://deploy-food-production.up.railway.app/recipes",{ headers:{
-        "accept-encoding": null
-      }})
+      .get("https://deploy-food-production.up.railway.app/recipes")
       .then((response) =>
       
         dispatch(console.log(response.data),{ type: GET_ALL_RECIPES, payload: response.data })
