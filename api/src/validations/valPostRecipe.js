@@ -1,10 +1,10 @@
 const multer = require("multer")
 const path = require("path")
 
-
+const url = path.join(__dirname, "..", "images")
 const diskstorage = multer.diskStorage({
   destination:  (req,file,cb)=>{
-    cb(null, path.join(__dirname, "..", "images"))
+    cb(null, url)
 
   },
   filename: (req, file, cb)=>{
@@ -28,7 +28,7 @@ const fileUpload = multer({
 
 const fs = require('fs');
 
-fs.access(path.join(__dirname, "..", "images")), fs.constants.W_OK, (err) => {
+fs.access(url), fs.constants.W_OK, (err) => {
   console.log(err ? 'No tienes permisos de escritura en la carpeta "images"' : 'Tienes permisos de escritura en la carpeta "images"');
 };
 
