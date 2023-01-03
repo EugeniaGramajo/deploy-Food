@@ -26,16 +26,4 @@ const fileUpload = multer({
   }
 }).single("image")
 
-/* module.exports = function valPostRecipe(req,res,next){
-    const {
-        title,
-        summary,
-      } = req.body;
-      if(!title&&!summary){return res.status(500).json({error:"Missing title and summary"})}
-      if(!title){return res.status(500).json({error:"Missing title"})}
-      if(!summary){return res.status(500).json({error:"Missing summary"})}
-     fileUpload()
-      next()
-} */
-
 module.exports = fileUpload;

@@ -12,7 +12,7 @@ const getRecipeByBdId = async (id) => {
         },
       });
 
-      foundId.image = foundId.image.includes("post.healthline")? foundId.image : ("http://localhost:3001/" + foundId.image)
+      foundId.image = foundId.image.includes("post.healthline")? foundId.image : ("https://deploy-food-production.up.railway.app/" + foundId.image)
       foundId.steps = foundId.steps.split(",")
       foundId.dishTypes=foundId.dishTypes.split(",")
       foundId.ingredients=foundId.ingredients.split(",")
