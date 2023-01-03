@@ -8,7 +8,7 @@ const getRecipeByApiId = async (id) => {
       `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`
     );
     console.log("bgdfdfggdfg",recipes)
-    console.log("",recipes.data.results.map(e.id))
+    console.log("ids",recipes.data.results.map(e=>e.id))
     const foundId = recipes.data.results.find((recipe) => recipe.id === id);
     console.log(foundId);
     return {
