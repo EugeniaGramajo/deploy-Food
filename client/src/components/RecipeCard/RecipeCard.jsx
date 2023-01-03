@@ -8,7 +8,8 @@ export default function RecipeCard(props) {
 
     
   return (
-    <div className={styles.general}>
+    
+    <div className={styles.general}><Link to={`/recipes/${props.id}`}>
       <div className={styles.cardDiv}>
         <img className={styles.img} src={props.image} alt={props.name} />
         
@@ -23,7 +24,7 @@ export default function RecipeCard(props) {
                       Health Score: {props.healthScore}
                     </div>
             </div>
-      </div>
+      </div></Link>
       <Link to={`/recipes/${props.id}`}>
           <button className={styles.button}> 
           Let's Cook!
