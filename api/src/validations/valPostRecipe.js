@@ -10,6 +10,16 @@ const diskstorage = multer.diskStorage({
       cb(null, Date.now() + path.extname(file.originalname))
   }
 })
+console.log(url)
+
+fs.mkdir(url, { recursive: true }, (err) => {
+  if (err) {
+    console.error(err.message);
+  } else {
+    console.log('Carpeta "images" creada');
+  }
+});
+
 const fileUpload = multer({
   storage:diskstorage,
   limits:{ fileSize: "10000000"},
