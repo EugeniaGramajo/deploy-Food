@@ -26,4 +26,10 @@ const fileUpload = multer({
   }
 }).single("image")
 
+const fs = require('fs');
+
+fs.access('images', fs.constants.W_OK, (err) => {
+  console.log(err ? 'No tienes permisos de escritura en la carpeta "images"' : 'Tienes permisos de escritura en la carpeta "images"');
+});
+
 module.exports = fileUpload;

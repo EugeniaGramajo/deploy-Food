@@ -37,8 +37,6 @@ export const getDietTypes = () => {
   return function (dispatch) {
         return axios.get("https://deploy-food-production.up.railway.app/diets")
     .then(res=> {
-      console.log(res)
-      console.log(res.data)
       dispatch({ type: "GET_DIETS", payload: res.data })
       
     })
