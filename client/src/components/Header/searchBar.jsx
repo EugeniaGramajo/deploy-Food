@@ -30,8 +30,8 @@ export default function SearchBar (){
     <>
     <div>
       <input placeholder="Search a recipe" className={styles.input} value={search} onChange={e=>{changeHandler(e)}}></input>
-      <button onClick={(e)=>clickHandler(e)}>Search</button>
-      <button onClick={(e)=>{clickHandler2(e)}}>Reset</button>
+      <button className={styles.button} onClick={(e)=>clickHandler(e)}>Search</button>
+      <button className={styles.button} onClick={(e)=>{clickHandler2(e)}}>Reset</button>
     </div>
     </>
   )

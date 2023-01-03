@@ -1,3 +1,14 @@
-.input{
-  
+.button{
+    background-color: #ebb7be;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+}
+.button:hover{
+    transition: 0.30s;
+    background-color: #ecc8ce;
+    color: #fff;
+    text-decoration: none 
+    
 }
