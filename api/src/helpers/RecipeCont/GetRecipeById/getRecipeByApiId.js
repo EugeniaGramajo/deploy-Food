@@ -1,15 +1,18 @@
 const axios = require("axios");
-const getAllRecipes = require("../GetRecipes/GetAllRecipes");
+require("dotenv").config();
+const { API_KEY1,API_KEY2,API_KEY4,API_KEY5,API_KEY3 } = process.env;
+
+const apiKeys = [API_KEY1,API_KEY2,API_KEY4,API_KEY5,API_KEY3]
+const randomIndex = Math.floor(Math.random()*apiKeys.length);
+const randomApiKey = apiKeys[randomIndex]
+
 
 const getRecipeByApiId = async (id) => {
-  console.log("id de search api", id)
-  try {
-    const recipes = await axios.get(
-      `https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`
-    );
-    console.log("bgdfdfggdfg",recipes)
-    console.log("ids",recipes.data.results.map(e=>e.id))
-    const foundId = recipes.data.results.find((recipe) => recipe.id === id);
+    try {
+      const recipe = await axios.get(
+        `https://api.spoonacular.com/recipes/${id}/information?apiKey=${randomApiKey}`
+      );
+      const foundId = recipe.data;
     console.log(foundId);
     return {
       id: foundId.id,
