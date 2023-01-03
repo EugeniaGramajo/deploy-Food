@@ -4,7 +4,7 @@
     text-decoration: none;
     border: none;
     border-radius: 3px;
-    padding: 10px;
+    margin: 5px;
 }
 .button:hover{
     transition: 0.30s;
@@ -15,5 +15,5 @@
 }
 .input{
     border: none;
-    box-shadow:0 1px 30px rgba(0, 0, 0, 0.672);
+    box-shadow:0 1px 30px rgba(0, 0, 0, 0.204);
 }
