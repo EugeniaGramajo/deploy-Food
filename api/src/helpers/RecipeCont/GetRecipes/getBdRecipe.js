@@ -1,8 +1,7 @@
 
 const { Recipe, Diet_type } = require("../../../db");
 const path = require('path');
-const imagePath = path.resolve(__dirname, '..', 'images');
-
+const imagePath = path.join(__dirname, '..', 'images');
 
 const getBdRecipes = async () => {
   const recipes =  await Recipe.findAll({
@@ -27,7 +26,7 @@ const getBdRecipes = async () => {
       readyInMinutes: e.readyInMinutes,
       ingredients: e.ingredients,
       servings: e.servings,
-      image: e.image.includes("post.healthline")? e.image : path.join(imagePath, e.image),
+      image: e.image.includes("post.healthline")? e.image : ("https://deploy-food-production.up.railway.app" + e.image),
       diets: e.Diet_types.map((e) => e.name),
       
       
