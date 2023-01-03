@@ -5,7 +5,7 @@ const path = require("path")
 
 const diskstorage = multer.diskStorage({
   destination:  (req,file,cb)=>{
-    cb(null,"../images")
+    cb(null,"images")
   },
   filename: (req, file, cb)=>{
       cb(null, Date.now() + path.extname(file.originalname))
@@ -28,7 +28,7 @@ const fileUpload = multer({
 
 const fs = require('fs');
 
-fs.access('../images', fs.constants.W_OK, (err) => {
+fs.access('images', fs.constants.W_OK, (err) => {
   console.log(err ? 'No tienes permisos de escritura en la carpeta "images"' : 'Tienes permisos de escritura en la carpeta "images"');
 });
 
