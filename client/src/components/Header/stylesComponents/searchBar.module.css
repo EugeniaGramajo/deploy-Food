@@ -4,6 +4,7 @@
     text-decoration: none;
     border: none;
     border-radius: 3px;
+    padding: 10px;
 }
 .button:hover{
     transition: 0.30s;
@@ -11,4 +12,8 @@
     color: #fff;
     text-decoration: none 
     
+}
+.input{
+    border: none;
+    box-shadow:0 1px 30px rgba(0, 0, 0, 0.672);
 }
