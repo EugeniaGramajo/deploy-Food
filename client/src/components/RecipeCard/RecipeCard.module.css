@@ -43,7 +43,7 @@ backdrop-filter: blur(8.7px);
 }
 
 .h2{
-    
+    text-decoration: none;
     height: 60px;
     margin: 4px;
     color: #ff97b2;
@@ -66,32 +66,33 @@ backdrop-filter: blur(8.7px);
     text-decoration: none;
 }
 .general{
-  
+    
     margin: 50px;
     text-decoration: none;
 }
 
 .divthis{
-  
+    text-decoration: none;
    display:inline;
    margin-left: 25px;
 }
 ul {
     
-   
+    text-decoration: none;
     min-height: 123px;
        -moz-columns: 2;
             columns: 2;
     padding-left: 0;
   }
   ul li {
-    
+    text-decoration: none;
     list-style-position: inside;
     -webkit-column-break-inside: avoid;
               page-break-inside: avoid;
                    break-inside: avoid;
   }
   .hs{
+    text-decoration: none;
     font-weight: 600;
     align-self: flex-end;
   }
