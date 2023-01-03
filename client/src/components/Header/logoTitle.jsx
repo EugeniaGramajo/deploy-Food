@@ -4,7 +4,6 @@ import styles from "./stylesComponents/logoTitle.module.css"
 
 export default function LogoTitle(props){
 
-    
 
     return(
         <>
