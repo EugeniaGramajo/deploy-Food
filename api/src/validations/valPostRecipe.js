@@ -1,7 +1,20 @@
 const multer = require("multer")
 const path = require("path")
 
-const url = path.join(__dirname, "..", "images")
+const fs = require('fs');
+
+const url = path.join(__dirname, "..", "images");
+
+fs.mkdir(url, { recursive: true }, (err) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log("Carpeta 'images' creada en la raíz del proyecto.");
+  }
+});
+
+
+
 const diskstorage = multer.diskStorage({
   destination:  (req,file,cb)=>{
     cb(null,url)
@@ -10,7 +23,7 @@ const diskstorage = multer.diskStorage({
       cb(null, Date.now() + path.extname(file.originalname))
   }
 })
-console.log(url)
+
 
 fs.mkdir(url, { recursive: true }, (err) => {
   if (err) {
@@ -37,7 +50,6 @@ const fileUpload = multer({
 
 console.log(path.join(__dirname, "images"))
 
-const fs = require('fs');
 
 fs.access(url, fs.constants.W_OK, (err) => {
   console.log(err ? 'No tienes permisos de escritura en la carpeta "images"' : 'Tienes permisos de escritura en la carpeta "images"');
