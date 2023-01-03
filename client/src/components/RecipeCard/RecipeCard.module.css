@@ -100,3 +100,6 @@ ul {
     text-decoration: none;
     color: #50342b;
   }
+  a:hover{
+    color: #50342b;
+  }
