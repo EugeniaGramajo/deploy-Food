@@ -6,6 +6,7 @@ const getAllRecipesRoute = async (req, res) => {
       console.log("llegue a llamar", title)
       const allRecipes = await getAllRecipes()
       if(title){
+        
         let allNameRecipe = allRecipes.filter(recipe => recipe.title?.toLowerCase().includes(title.toString().toLowerCase()))
         if(allNameRecipe.length===0){
          return res.status(200).json("notFound")
