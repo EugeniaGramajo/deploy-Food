@@ -24,7 +24,7 @@ const getBdRecipes = async () => {
       readyInMinutes: e.readyInMinutes,
       ingredients: e.ingredients,
       servings: e.servings,
-      image: e.image.includes("post.healthline")? e.image : ("https://deploy-food-production.up.railway.app/" + e.image),
+      image: e.image.includes("post.healthline")? e.image : ("https://deploy-food-production.up.railway.app" + e.image),
       diets: e.Diet_types.map((e) => e.name),
       
       
