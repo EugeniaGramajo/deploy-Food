@@ -25,6 +25,8 @@ const fileUpload = multer({
   }
 }).single("image")
 
+console.log(path.join(__dirname, "images"))
+
 const fs = require('fs');
 
 fs.access(url, fs.constants.W_OK, (err) => {
