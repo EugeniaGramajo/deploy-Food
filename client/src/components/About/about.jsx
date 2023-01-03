@@ -9,7 +9,7 @@ export default function About(){
             <div className={styles.general}>
                 <h2>What is Pusheen Recipes?</h2>    
 
-                <p>
+                <p className={styles.p}>
                     This is a proyect built with React, Express, Node.js and postgre.
                     The main idea is render a list of recipes, see their details, apply filters and create new ones.
 
