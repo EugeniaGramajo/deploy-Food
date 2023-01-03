@@ -1,7 +1,8 @@
 
 const { Recipe, Diet_type } = require("../../../db");
 const path = require('path');
-const imagePath = path.join(__dirname, '..', 'images');
+const imagePath = path.resolve(__dirname, '..', 'images');
+
 
 const getBdRecipes = async () => {
   const recipes =  await Recipe.findAll({
