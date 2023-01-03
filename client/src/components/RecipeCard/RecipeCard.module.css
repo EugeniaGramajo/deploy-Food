@@ -96,3 +96,6 @@ ul {
     font-weight: 600;
     align-self: flex-end;
   }
+  a{
+    text-decoration: none;
+  }
