@@ -122,7 +122,7 @@ const diets = useSelector(state=> state.diet)
             </div>  
             </div>
             <div className={styles.divD_T}>
-                <h2>Select the diet type *</h2>
+                <h2>Select the diet type </h2>
                 <div >
                     {diets?.map(d=><label><input type="checkbox" class="form-check-input mt-0"  name="Diet_type" key={d.id} onChange={checkHandler} id={d.id}/>{d.name}</label>)}
                 </div>
