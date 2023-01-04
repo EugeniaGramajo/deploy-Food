@@ -16,3 +16,7 @@ border: 1px solid rgba(255, 255, 255, 0.08);
     width: 100%;
     font-size: 20px;
 }
+.social img {
+    height: 50px;
+    width: 50px;
+}

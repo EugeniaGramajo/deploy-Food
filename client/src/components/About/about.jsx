@@ -16,9 +16,19 @@ export default function About(){
 
                     This is my first proyect and I am very proud of it because I started from nothing and in four month 
                     I was able to build it and learn a lot in the process.
-
                 </p>
-                
+                <div className={styles.social}>
+                    <a>
+                        <img src="https://www.linkedin.com/in/eugenia-gramajo-6b0a82157/"></img>
+                        <span>LinkedIn</span>                    
+                    </a>
+                </div>
+                <div className={styles.social}>
+                    <a>
+                        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"></img>
+                        <span>GitHub</span>                    
+                    </a>
+                </div>
 
             </div>     
         </>
