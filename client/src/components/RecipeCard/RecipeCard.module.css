@@ -168,7 +168,7 @@ ul {
         width: 200px;
       display: flex;
       flex-direction:column;
-      justify-content:space-around;
+      justify-content:flex-start;
       text-decoration: none;
       margin: auto;
       margin-top: 15px;
@@ -204,9 +204,7 @@ ul {
   .divthis{
     display: none;
   }
-  .hs{
-    display: none;
-  }
+ 
   .h2{
     margin: 0%;
   }
