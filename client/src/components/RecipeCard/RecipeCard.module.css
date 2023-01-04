@@ -206,11 +206,14 @@ ul {
   }
  
   .h2{
+    
+    margin-top: 15px;
+  }
+  .hs{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     
-    margin-top: 15px;
   }
   }
   
