@@ -40,3 +40,21 @@
      margin-bottom: 15px;
      padding: none;   }
  }
+
+ @media only screen and (max-width: 400px) and (max-height: 900px) {
+    .div{
+     display: flex;
+     flex-direction: column;
+     justify-content:center ;
+     margin: auto;
+     
+    }
+     .searchBar{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: 0;
+     margin-bottom: 10px;
+     padding: none;   }
+ 
+ }
