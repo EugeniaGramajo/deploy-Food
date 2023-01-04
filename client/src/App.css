@@ -4,27 +4,15 @@
   background-size: 450px;
   min-height: 975px;
   height: max-content;
-  font-family: 'Century Gothic', CenturyGothic, sans-serif;
+  font-family: Century Gothic;
   color: #50342b;
 }
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media only screen and (max-width: 720px) {
-  /* estilos para pantallas 720p aquí */
-  
+@media only screen and (max-width: 650px) and (max-height: 896px){
+    .App{
+      height: max-content;
+      width: fit-content;
+    }
 }
-
-@media only screen and (max-width: 480px) {
-  /* estilos para dispositivos móviles aquí */
-  
-}
-
