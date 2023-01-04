@@ -20,13 +20,11 @@ export default function About(){
                 </p>
                 <div>
                     <Link to={"https://www.linkedin.com/in/eugenia-gramajo-6b0a82157/"}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedin"></img>
                         <span>LinkedIn</span>
                     </Link>
                 </div>
                 <div>
                     <Link to={"https://github.com/EugeniaGramajo/deploy-Food"}>
-                        <img src="https://banner2.cleanpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg"></img>
                         <span>GitHub</span>
                     </Link>
                 </div>
