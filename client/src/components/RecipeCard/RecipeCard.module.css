@@ -43,7 +43,7 @@ backdrop-filter: blur(8.7px);
 }
 
 .h2{
-    
+    text-decoration: none;
     height: 60px;
     margin: 4px;
     color: #ff97b2;
@@ -66,64 +66,45 @@ backdrop-filter: blur(8.7px);
     text-decoration: none;
 }
 .general{
-  
+    
     margin: 50px;
     text-decoration: none;
 }
 
 .divthis{
-  
+    text-decoration: none;
    display:inline;
    margin-left: 25px;
 }
 ul {
     
-   
+    text-decoration: none;
     min-height: 123px;
        -moz-columns: 2;
             columns: 2;
     padding-left: 0;
   }
   ul li {
-    
+    text-decoration: none;
     list-style-position: inside;
     -webkit-column-break-inside: avoid;
               page-break-inside: avoid;
                    break-inside: avoid;
   }
   .hs{
+    text-decoration: none;
     font-weight: 600;
     align-self: flex-end;
+    color: #ff97b2;
   }
-
+  a{
+    text-decoration: none;
+    color: #50342b;
+  }
+  a:hover{
+    color: #50342b;
+  }
   @media only screen and (max-width: 800px) {
-  /* Estilos para pantallas de 720p y menores */
-
-  .cardDiv{
-    display: flex;
-    flex-direction:column;
-    justify-content:space-around;
-    text-decoration: none;
-    margin: auto;
-    margin-top: 50px;
-  }
-  .button{
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    margin: auto;
-  }
-  .general{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 25px;
-    text-decoration: none;
-}
-
-}
-
-@media only screen and (max-width: 650px) and (max-height: 896px)  {
     /* Estilos para pantallas de 720p y menores */
   
     .cardDiv{
@@ -132,7 +113,7 @@ ul {
       justify-content:space-around;
       text-decoration: none;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 50px;
     }
     .button{
       display: flex;
@@ -149,3 +130,31 @@ ul {
   }
   
   }
+  
+  @media only screen and (max-width: 650px) and (max-height: 896px)  {
+      /* Estilos para pantallas de 720p y menores */
+    
+      .cardDiv{
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+        text-decoration: none;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .button{
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        margin: auto;
+      }
+      .general{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+        text-decoration: none;
+    }
+    
+    }
+  
