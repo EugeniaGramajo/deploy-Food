@@ -163,8 +163,8 @@ ul {
 
   @media only screen and (max-width: 400px) and (max-height: 900px){
       .cardDiv{
-        min-height: 420px;
-    max-height: 420px;
+        min-height: 480px;
+    max-height: 380px;
         width: 200px;
       display: flex;
       flex-direction:column;
@@ -193,12 +193,16 @@ ul {
     min-width: 200px;
     max-width: 200px;
     max-height: 120px;
+    justify-content: flex-start;
   }
   
   .li{
     display: none;
   }
   .divthis{
+    display: none;
+  }
+  .hs{
     display: none;
   }
   }
