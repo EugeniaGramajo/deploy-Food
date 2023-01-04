@@ -108,6 +108,7 @@ ul {
     /* Estilos para pantallas de 720p y menores */
   
     .cardDiv{
+      
       display: flex;
       flex-direction:column;
       justify-content:space-around;
@@ -135,6 +136,8 @@ ul {
     /* Estilos para pantallas de 720p y menores */
   
     .cardDiv{
+      min-height: 420px;
+    max-height: 420px;
       display: flex;
       flex-direction:column;
       justify-content:space-around;
@@ -185,10 +188,10 @@ ul {
       text-decoration: none;
   }
   .img{
-    min-height:100px ;
+    min-height:120px ;
     min-width: 200px;
     max-width: 200px;
-    max-height: 100px;
+    max-height: 120px;
   }
   
   .li{
