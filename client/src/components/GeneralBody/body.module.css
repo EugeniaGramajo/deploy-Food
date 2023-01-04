@@ -12,3 +12,25 @@
 .divaux{
     padding: 30px;
 }
+
+@media only screen and (max-width: 720px) {
+    /* estilos para pantallas 720p aquí */
+    .div{
+        margin: auto;
+    max-width: 720px;
+    }
+    .divaux{
+        padding: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* estilos para dispositivos móviles aquí */
+    .div{
+        margin: auto;
+    max-width: 480px;
+    }
+    .divaux{
+        padding: 7px;
+    }
+  }

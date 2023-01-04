@@ -17,3 +17,14 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 720px) {
+  /* estilos para pantallas 720p aquí */
+  
+}
+
+@media only screen and (max-width: 480px) {
+  /* estilos para dispositivos móviles aquí */
+  
+}
+
