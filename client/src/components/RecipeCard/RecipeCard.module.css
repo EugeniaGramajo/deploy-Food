@@ -136,8 +136,7 @@ ul {
     /* Estilos para pantallas de 720p y menores */
   
     .cardDiv{
-      min-height: 420px;
-    max-height: 420px;
+      
       display: flex;
       flex-direction:column;
       justify-content:space-around;
@@ -164,6 +163,8 @@ ul {
 
   @media only screen and (max-width: 400px) and (max-height: 900px){
       .cardDiv{
+        min-height: 420px;
+    max-height: 420px;
         width: 200px;
       display: flex;
       flex-direction:column;
@@ -195,6 +196,9 @@ ul {
   }
   
   .li{
+    display: none;
+  }
+  .divthis{
     display: none;
   }
   }
