@@ -19,7 +19,7 @@ export default function Body(props) {
   const firstPage = quantity - recipePage;
   const showRecipes = recipes?.slice(firstPage, quantity);
 
-  console.log(recipes, showRecipes)
+ 
   const paged = function (pageN) {setPage(pageN);};
   const pagedP = function () {page === 1 ? setPage(total) : setPage(page - 1); };
   const pagedN = function () {page === total ? setPage(1) : setPage(page + 1);};
