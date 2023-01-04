@@ -7,7 +7,7 @@ import styles from "./stylesComponents/searchBar.module.css"
 
 export default function SearchBar (){
 
-  const history=useHistory()
+  
   const [search, setSearch]=useState("")
   const dispatch = useDispatch()
   const state = useSelector(state=>state.recipes)
@@ -18,7 +18,6 @@ export default function SearchBar (){
   }
   const clickHandler = (e)=>{
     e.preventDefault()
-    history("/home")
     dispatch(getRecipeByName(search))
     
   }
