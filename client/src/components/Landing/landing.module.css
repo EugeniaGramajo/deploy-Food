@@ -35,13 +35,15 @@ border: 1px solid rgba(255, 255, 255, 0.53);
 @media only screen and (max-width: 650px) and (max-height: 896px){
 .img{
     margin: auto;
+    margin-top: 50px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.555);
     width: 60%;
     height: 80%;
 }
 .div{
-    margin: auto;
+   
+    margin: auto; margin-top: 50px;
     width:40%;
 }
 }
