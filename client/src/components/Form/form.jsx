@@ -47,7 +47,6 @@ const diets = useSelector(state=> state.diet)
             aux==="steps"? setSteps("") : aux==="ingredients"? setIngredients("") : setDishType("")
 
         }
-        console.log(form)
     }
     const deleteHandler = (e)=>{
         let help = e.target.name
@@ -114,7 +113,7 @@ const diets = useSelector(state=> state.diet)
            <div className={styles.divCont}>
             <div >
             <div className={styles.divSum}>
-                <h2>Describe your recipe *:</h2>
+                <h2>Describe your recipe :</h2>
                 <textarea class="form-control" required  placeholder="summary" name="summary" value={form.summary} onChange={changeHandler}></textarea>
             </div> 
             <div className={styles.divHS}>
