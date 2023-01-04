@@ -18,16 +18,7 @@ export default function About(){
                     I was able to build it and learn a lot in the process.
 
                 </p>
-                <div>
-                    <Link to={"https://www.linkedin.com/in/eugenia-gramajo-6b0a82157/"}>
-                        <span>LinkedIn</span>
-                    </Link>
-                </div>
-                <div>
-                    <Link to={"https://github.com/EugeniaGramajo/deploy-Food"}>
-                        <span>GitHub</span>
-                    </Link>
-                </div>
+                
 
             </div>     
         </>
