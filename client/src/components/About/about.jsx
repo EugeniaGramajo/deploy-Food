@@ -18,14 +18,14 @@ export default function About(){
                     I was able to build it and learn a lot in the process.
                 </p>
                 <div className={styles.social}>
-                    <a>
-                        <img src="https://www.linkedin.com/in/eugenia-gramajo-6b0a82157/"></img>
+                    <a href="https://www.linkedin.com/in/eugenia-gramajo-6b0a82157/">
+                        <img src="https://www.freepnglogos.com/uploads/linkedin-basic-round-social-logo-png-13.png"></img>
                         <span>LinkedIn</span>                    
                     </a>
                 </div>
                 <div className={styles.social}>
-                    <a>
-                        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"></img>
+                    <a href="https://github.com/EugeniaGramajo/deploy-Food">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img>
                         <span>GitHub</span>                    
                     </a>
                 </div>
