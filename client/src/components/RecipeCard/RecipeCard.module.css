@@ -132,29 +132,29 @@ ul {
   }
   
   @media only screen and (max-width: 650px) and (max-height: 896px)  {
-      /* Estilos para pantallas de 720p y menores */
-    
-      .cardDiv{
-        display: flex;
-        flex-direction:column;
-        justify-content:space-around;
-        text-decoration: none;
-        margin: auto;
-        margin-top: 20px;
-      }
-      .button{
-        display: flex;
-        position: relative;
-        text-decoration: none;
-        margin: auto;
-      }
-      .general{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 25px;
-        text-decoration: none;
+    /* Estilos para pantallas de 720p y menores */
+  
+    .cardDiv{
+      display: flex;
+      flex-direction:column;
+      justify-content:space-around;
+      text-decoration: none;
+      margin: auto;
+      margin-top: 20px;
     }
-    
+    .button{
+      display: flex;
+      position: relative;
+      text-decoration: none;
+      margin: auto;
     }
+    .general{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      text-decoration: none;
+  }
+  
+  }
   
