@@ -41,7 +41,6 @@ export default function Body(props) {
   showRecipes.length>0? (
     <div className={styles.div}> 
 
-    <Filters></Filters>
     <Paginado total={total} paged={paged} pagedN={pagedN} pagedP={pagedP}></Paginado>
 <div className={styles.container}>
         { showRecipes?.map((recipe) => (
