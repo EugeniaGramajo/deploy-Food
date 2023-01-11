@@ -20,7 +20,7 @@ export default function About(){
                 <div className={styles.div}>
                 <div className={styles.social}>
                     <a href="https://www.linkedin.com/in/eugenia-gramajo" target="_blank">
-                        <img src="https://www.freepnglogos.com/uploads/linkedin-basic-round-social-logo-png-13.png"></img>
+                        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"></img>
                         <span>LinkedIn</span>                    
                     </a>
                 </div>
